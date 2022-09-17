@@ -1,5 +1,12 @@
 name: Publish to PyPI
+<<<<<<< HEAD
+on:
+  push:
+    branches:
+      - master
+=======
 on: push
+>>>>>>> release/v1.1.1
 
 jobs:
   build-n-publish:
