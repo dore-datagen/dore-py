@@ -18,27 +18,26 @@
 ## Helpful Links
 
 * [Project Site](https://dore-datagen.github.io/)
-* [Example](https://dore-datagen.github.io/example/)
 * [GitHub](https://github.com/dore-datagen/dore-py)
 
-
 ### Installation
-
-Optional, but recommended: Create a virtual env and activate it.
-
-```shell
-(venv)$ python3 -m venv venv && source venv/bin/activate
-```
-
 Install Dore
 
 ```shell
-(venv)$ python -m pip install dore
+$ pip install dore
 ```
 
 ### Usage
-Invoke Dore with a manifest
+Create a [Manifest](https://dore-datagen.github.io/manifest/manifest/) which defines requirements for the target 
+data, and Invoke Dore with the Manifest:
 
 ```shell
-(venv)$ dore --manifest /path/to/manifest.json --var1=val1 --var2=val2 ...
+$ dore --manifest MANIFEST_FILE [OPTIONS]
 ```
+
+Please refer [CLI Reference](https://dore-datagen.github.io/cli/cli_reference/) for details on the **dore** command 
+usage.
+
+Also, do check out our [Tutorial](https://dore-datagen.github.io/tutorial/overview/) to learn how to create a Manifest 
+for 
+an ecommerce schema and use Dore to generate data for it.
